@@ -1,0 +1,7 @@
+1:"$Sreact.fragment"
+2:I[88589,["/macroeconomia-espana/_next/static/chunks/0z5r1d74ezk67.js","/macroeconomia-espana/_next/static/chunks/0n4z.7yu76je-.js","/macroeconomia-espana/_next/static/chunks/008v3~h2kcl4r.js","/macroeconomia-espana/_next/static/chunks/0fcg16zcd7zmx.js"],"default"]
+3:I[53173,["/macroeconomia-espana/_next/static/chunks/0z5r1d74ezk67.js","/macroeconomia-espana/_next/static/chunks/0n4z.7yu76je-.js","/macroeconomia-espana/_next/static/chunks/008v3~h2kcl4r.js","/macroeconomia-espana/_next/static/chunks/0fcg16zcd7zmx.js"],"default"]
+4:I[97367,["/macroeconomia-espana/_next/static/chunks/0z5r1d74ezk67.js","/macroeconomia-espana/_next/static/chunks/0n4z.7yu76je-.js"],"OutletBoundary"]
+5:"$Sreact.suspense"
+0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","main",null,{"className":"h-screen overflow-hidden","children":["$","$L3",null,{}]}]],[["$","script","script-0",{"src":"/macroeconomia-espana/_next/static/chunks/008v3~h2kcl4r.js","async":true}],["$","script","script-1",{"src":"/macroeconomia-espana/_next/static/chunks/0fcg16zcd7zmx.js","async":true}]],["$","$L4",null,{"children":["$","$5",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"98tGopn9tUjOaohdlOlmy"}
+6:null
