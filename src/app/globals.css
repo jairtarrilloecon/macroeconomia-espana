@@ -1,26 +1,88 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-brand-dark: #172033;
+  --color-brand-light: #F8FAFC;
+  --color-brand-paper: #FFFFFF;
+  --color-brand-accent: #E24A3B;
+  --color-brand-blue: #2563EB;
+  --color-brand-teal: #0F9F88;
+  --color-brand-amber: #D97706;
+  --color-brand-violet: #7C3AED;
+  --color-brand-gray: #667085;
+  --color-brand-border: #DDE5F0;
+  --font-sans: "Aptos", "Segoe UI", Arial, sans-serif;
+  --font-playfair: "Georgia", "Times New Roman", serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background:
+    linear-gradient(135deg, rgba(37, 99, 235, 0.08), transparent 34%),
+    linear-gradient(225deg, rgba(15, 159, 136, 0.09), transparent 38%),
+    #F8FAFC;
+  color: #172033;
+  overscroll-behavior: none;
+}
+
+::selection {
+  background: rgba(226, 74, 59, 0.18);
+  color: #172033;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .section-shell {
+    width: min(1180px, calc(100vw - 32px));
+    margin-inline: auto;
+  }
+
+  .light-panel {
+    background: rgba(255, 255, 255, 0.86);
+    border: 1px solid rgba(221, 229, 240, 0.9);
+    box-shadow: 0 22px 60px rgba(23, 32, 51, 0.08);
+    backdrop-filter: blur(18px);
+  }
+
+  .soft-transition {
+    transition:
+      transform 280ms ease,
+      box-shadow 280ms ease,
+      border-color 280ms ease,
+      background-color 280ms ease,
+      color 280ms ease;
+  }
+
+}
+
+.chart-expanded {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  background: rgba(248, 250, 252, 0.98);
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #B7C6D8;
+  border-radius: 4px;
 }
